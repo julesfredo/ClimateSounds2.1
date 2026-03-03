@@ -16,8 +16,6 @@ export class Map implements OnInit {
   private lng:number = 0;
 
   center = signal<google.maps.LatLngLiteral>({ lat: this.lat, lng: this.lng });
-  // center2 = signal<google.maps.LatLngLiteral>({ lat: this.lat, lng: this.lng });
-  // center3= signal<google.maps.LatLngLiteral>({ lat: this.lat, lng: this.lng });
   zoom1 = signal(10);
   zoom2 = signal(12);
   zoom3 = signal(9);

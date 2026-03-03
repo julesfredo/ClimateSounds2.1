@@ -80,7 +80,6 @@ export class Climate implements OnInit {
     });
     this.changeCoords();
     console.log(this.description);
-    // this.weatherMapService.sendSearch();
   }
    changeCoords() {
     this.weatherMapService.setCoord(this.lat, this.lng);

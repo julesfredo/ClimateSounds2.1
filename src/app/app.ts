@@ -10,7 +10,6 @@ import { Music } from './music/music';
     Map,
     Music
   ],
-  // template: `<app-climate />`,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
