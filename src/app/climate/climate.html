@@ -1,0 +1,30 @@
+ <div class="container-fluid">
+  <div class="tabs is-centered height is-fullwidth">
+    <h3>{{title}}</h3>
+  </div>
+  <div class="input-group">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <input type="search" id="city-searchbar"
+      placeholder="What're you searching for?" 
+      aria-describedby="button-addon1" 
+      class="form-control border-0 bg-light"
+      required
+      [(ngModel)]="locale" name="locale">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+  <div class="row">
+    <h5>{{ description }}</h5>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      {{ tempF }} &#8457;
+    </div>
+    <div class="col-6">
+      {{ tempC }} &#8451;
+    </div>
+  </div>
+  <div class="row">
+    <h5>{{ city }}</h5>
+  </div>
+</div>

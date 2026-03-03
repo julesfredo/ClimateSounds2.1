@@ -1,0 +1,26 @@
+div {
+  text-align: center;
+}     
+h3 {
+  text-align: center;
+}
+.height {
+  padding: 50px;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+}
+/* searchbar */
+form{
+  width: 80%;
+  margin: 0 auto;
+  
+}
+#city-searchbar{
+  margin: 0 auto;
+  text-align: center;
+}

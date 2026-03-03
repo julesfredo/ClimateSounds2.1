@@ -1,0 +1,56 @@
+<head>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOtzmSju7Ij-Sv3hbdirSw-Z-isFRye4">
+</script>
+</head>
+<div class="container-fluid height">
+	<div class="row height">
+		<div class="col-lg-4" id="map1">
+			<div class="map-wrapper">
+				<google-map
+				height="500px"
+				width="100%"
+				[center]="center()"
+				[zoom]="zoom1()"
+				[options]="options">
+
+				<map-marker
+				[position]="center()"
+				[title]="'Our Warsaw Office'">
+			</map-marker>
+		</google-map>
+	</div>
+</div>
+<div class="col-lg-4" id="map1">
+	<div class="map-wrapper">
+		<google-map
+		height="500px"
+		width="100%"
+		[center]="center()"
+		[zoom]="zoom2()"
+		[options]="options">
+
+		<map-marker
+		[position]="center()">
+	</map-marker>
+</google-map>
+</div>
+</div>
+
+<div class="col-lg-4" id="map1">
+	<div class="map-wrapper">
+		<google-map
+		height="500px"
+		width="100%"
+		[center]="center()"
+		[zoom]="zoom3()"
+		[options]="options">
+
+		<map-marker
+		[position]="center()">
+	</map-marker>
+</google-map>
+</div>
+</div>
+</div>
+</div>

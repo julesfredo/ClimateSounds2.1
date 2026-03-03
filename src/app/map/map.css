@@ -1,0 +1,10 @@
+#map {
+    height: 100%;
+    width: 100%;
+}
+.height {
+    height: 100%;
+    width: 100%;
+	border: 5px solid #D1CBC7;
+    margin: 0 auto;
+}
