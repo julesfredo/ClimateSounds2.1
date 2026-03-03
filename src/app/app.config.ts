@@ -8,6 +8,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
-    provideGoogleAnalytics()
+    provideGoogleAnalytics("G-7ZGTT1JKG3"),
   ]
 };
