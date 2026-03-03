@@ -108,6 +108,7 @@ export class WeatherMapService {
       console.log(this.linkToPlay);
       });
   }
+  
   setSong() {
   console.log("Changing song");
         for (var i = 0;i<this.linksToPlay.length; i++) {

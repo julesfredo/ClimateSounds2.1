@@ -1,19 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { WeatherMapService } from '../weather-map';
 import { GlobalConstants } from '../GlobalConstants'
+import { Music } from '../music/music';
 
 
 @Component({
   selector: 'app-climate',
   imports: [
     FormsModule,
-
+    Music
   ],
   templateUrl: './climate.html',
   styleUrl: './climate.css',
 })
 export class Climate implements OnInit {
+  @ViewChild(Music) music!: Music;
   public title: string = 'ClimateSounds';
   
   public resp: Object = {}
@@ -79,7 +81,7 @@ export class Climate implements OnInit {
       this.lng = response.coord.lon;
     });
     this.changeCoords();
-    console.log(this.description);
+    this.music.songLink = this.weatherMapService.setMusic();
   }
    changeCoords() {
     this.weatherMapService.setCoord(this.lat, this.lng);
